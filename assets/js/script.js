@@ -13,6 +13,10 @@ const CONFIG = {
         serverCount: '889',
         userCount: '467,219',
         cachedUsers: '200,390'
+    },
+    // Developer information
+    developerInfo: {
+        username: 'devterminator'
     }
 };
 
@@ -235,9 +239,9 @@ async function fetchOwnerInfo() {
         }
     } catch (error) {
         console.log('Note: Developer info could not be fetched from Discord API (CORS restriction)', error);
-        // Fallback to static developer name
+        // Fallback to static developer name from config
         updateOwnerInfo({
-            username: 'devterminator',
+            username: CONFIG.developerInfo.username,
             discriminator: '',
             avatar: `https://cdn.discordapp.com/embed/avatars/0.png`
         });
