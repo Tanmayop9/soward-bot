@@ -39,7 +39,21 @@
 
 ## 🚀 Deployment
 
-This website is built as a static site and can be deployed on:
+This website can be deployed on multiple platforms:
+
+### Render (Recommended)
+1. Fork or push the code to your GitHub repository
+2. Sign up on [Render](https://render.com)
+3. Click "New +" and select "Web Service"
+4. Connect your GitHub repository
+5. Render will automatically detect the `render.yaml` configuration
+6. Click "Create Web Service"
+7. Your site will be live at `https://your-service-name.onrender.com`
+
+**Manual Configuration (if needed):**
+- **Build Command:** `npm install`
+- **Start Command:** `npm start`
+- **Environment:** Node
 
 ### GitHub Pages
 1. Push the code to your GitHub repository
@@ -53,7 +67,7 @@ This website is built as a static site and can be deployed on:
 3. Your site will be live with a custom Vercel URL
 
 ### Custom Domain
-Both GitHub Pages and Vercel support custom domains. Configure your DNS settings to point to your deployment platform.
+Render, GitHub Pages, and Vercel all support custom domains. Configure your DNS settings to point to your deployment platform.
 
 ## 🛠️ Local Development
 
@@ -65,22 +79,35 @@ git clone https://github.com/yourusername/soward-bot.git
 cd soward-bot
 ```
 
-2. Open `index.html` in your browser or use a local server:
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Navigate to `http://localhost:3000` in your browser
+
+**Alternative methods:**
 ```bash
 # Using Python
 python -m http.server 8000
 
-# Using Node.js
+# Using Node.js without installation
 npx serve
 ```
-
-3. Navigate to `http://localhost:8000` in your browser
 
 ## 📁 Project Structure
 
 ```
 soward-bot/
 ├── index.html              # Main HTML file
+├── server.js               # Express server for Render deployment
+├── package.json            # Node.js dependencies and scripts
+├── render.yaml             # Render deployment configuration
 ├── assets/
 │   ├── css/
 │   │   └── styles.css      # Stylesheets
