@@ -134,20 +134,6 @@ const commandsData = {
         { name: 'removepremium', description: 'Remove premium from a server', icon: 'fa-times-circle' },
         { name: 'updatepremium', description: 'Update premium settings', icon: 'fa-edit' },
         { name: 'listprem', description: 'List all premium servers', icon: 'fa-list' }
-    ],
-    dev: [
-        { name: 'eval', description: 'Evaluate JavaScript code', icon: 'fa-code' },
-        { name: 'execute', description: 'Execute shell commands', icon: 'fa-terminal' },
-        { name: 'shards', description: 'View shard information', icon: 'fa-network-wired' },
-        { name: 'blacklist', description: 'Blacklist a user', icon: 'fa-ban' },
-        { name: 'blacklistserver', description: 'Blacklist a server', icon: 'fa-ban' },
-        { name: 'globalban', description: 'Ban a user globally', icon: 'fa-globe' },
-        { name: 'leaveserver', description: 'Make the bot leave a server', icon: 'fa-door-closed' },
-        { name: 'serverlist', description: 'List all servers the bot is in', icon: 'fa-list' },
-        { name: 'maintancemode', description: 'Toggle maintenance mode', icon: 'fa-wrench' },
-        { name: 'noprefix', description: 'Configure no-prefix mode', icon: 'fa-text-slash' },
-        { name: 'reloadcmd', description: 'Reload commands', icon: 'fa-sync' },
-        { name: 'bitzxier', description: 'Special developer command', icon: 'fa-star' }
     ]
 };
 
@@ -164,6 +150,5 @@ const categoryInfo = {
     ticket: { icon: 'fa-ticket-alt', displayName: 'Ticket', color: '#E91E63' },
     jointocreate: { icon: 'fa-plus-square', displayName: 'Join to Create', color: '#00BCD4' },
     customrole: { icon: 'fa-cog', displayName: 'Custom Role', color: '#FF9800' },
-    premium: { icon: 'fa-crown', displayName: 'Premium', color: '#FFD700' },
-    dev: { icon: 'fa-code', displayName: 'Developer', color: '#607D8B' }
+    premium: { icon: 'fa-crown', displayName: 'Premium', color: '#FFD700' }
 };

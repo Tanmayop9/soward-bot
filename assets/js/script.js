@@ -4,7 +4,7 @@ const CONFIG = {
     botId: null, // Bot application ID
     ownerId: '1201457314805330040',
     inviteUrl: null, // Will be generated dynamically
-    supportServer: null, // Can be added later
+    supportServer: 'https://discord.gg/XtTjSB5Zqb',
     // Static bot information
     botInfo: {
         username: 'SOWARD',
@@ -13,6 +13,10 @@ const CONFIG = {
         serverCount: '889',
         userCount: '467,219',
         cachedUsers: '200,390'
+    },
+    // Developer information
+    developerInfo: {
+        username: 'devterminator'
     }
 };
 
@@ -234,11 +238,11 @@ async function fetchOwnerInfo() {
             throw new Error('Could not fetch owner info');
         }
     } catch (error) {
-        console.log('Note: Owner info could not be fetched from Discord API (CORS restriction)', error);
-        // Fallback to generic data
+        console.log('Note: Developer info could not be fetched from Discord API (CORS restriction)', error);
+        // Fallback to static developer name from config
         updateOwnerInfo({
-            username: 'Bot Owner',
-            discriminator: '0000',
+            username: CONFIG.developerInfo.username,
+            discriminator: '',
             avatar: `https://cdn.discordapp.com/embed/avatars/0.png`
         });
     }
@@ -261,9 +265,8 @@ function updateOwnerInfo(ownerData) {
 
 // Initialize invite links
 function initInviteLinks() {
-    // Default Discord bot invite URL
-    // Note: Replace CLIENT_ID with actual bot client ID
-    const defaultInviteUrl = 'https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&permissions=8&scope=bot%20applications.commands';
+    // Discord bot invite URL
+    const defaultInviteUrl = 'https://discord.com/api/oauth2/authorize?client_id=1433816132061761646&permissions=8&scope=bot';
     
     // You can also use a custom invite link if available
     const inviteUrl = CONFIG.inviteUrl || defaultInviteUrl;
@@ -282,6 +285,7 @@ function initInviteLinks() {
     // Set support server link if available
     if (elements.supportLink && CONFIG.supportServer) {
         elements.supportLink.href = CONFIG.supportServer;
+        elements.supportLink.target = '_blank';
     } else if (elements.supportLink) {
         elements.supportLink.href = '#';
         elements.supportLink.addEventListener('click', (e) => {
