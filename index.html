@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soward - Advanced Discord Moderation & Management Bot">
+    <meta name="keywords" content="Discord bot, moderation, antinuke, security, Discord management">
+    <meta name="author" content="Soward Bot">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Soward - Discord Bot">
+    <meta property="og:description" content="Advanced Discord Moderation & Management Bot">
+    <meta property="og:image" content="./assets/soward.png">
+    <meta property="og:type" content="website">
+    
+    <title>Soward - Discord Bot</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/soward.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="./assets/soward.png" alt="Soward Logo" class="logo-img">
+                    <span class="logo-text">Soward</span>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#commands" class="nav-link">Commands</a>
+                    <a href="#stats" class="nav-link">Stats</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-primary invite-btn" id="inviteBtn">
+                        <i class="fas fa-plus"></i> Invite Bot
+                    </a>
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Meet <span class="gradient-text">Soward</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        The Ultimate Discord Bot for Server Management, Security & Moderation
+                    </p>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Advanced Antinuke</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-tools"></i>
+                            <span>Powerful Moderation</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Lightning Fast</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-large btn-primary" id="inviteBtnHero">
+                            <i class="fas fa-plus-circle"></i> Add to Discord
+                        </a>
+                        <a href="#commands" class="btn btn-large btn-secondary">
+                            <i class="fas fa-book"></i> View Commands
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="bot-card">
+                        <div class="bot-avatar" id="botAvatar">
+                            <img src="./assets/soward.png" alt="Soward Bot" class="avatar-img">
+                            <div class="status-indicator online"></div>
+                        </div>
+                        <div class="bot-info">
+                            <h3 class="bot-name" id="botName">Soward</h3>
+                            <p class="bot-tag" id="botTag">#0000</p>
+                        </div>
+                        <div class="bot-stats-mini">
+                            <div class="stat-mini">
+                                <i class="fas fa-server"></i>
+                                <span id="serverCount">-</span>
+                            </div>
+                            <div class="stat-mini">
+                                <i class="fas fa-users"></i>
+                                <span id="userCount">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need to manage your Discord server</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Antinuke</h3>
+                    <p>Protect your server from raids and malicious attacks with our comprehensive antinuke system</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Moderation Tools</h3>
+                    <p>Complete moderation suite with ban, kick, mute, warn, and advanced permission management</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Server Logs</h3>
+                    <p>Comprehensive logging system to track all server activities and member actions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Auto Moderation</h3>
+                    <p>Automated spam, link, and invite filtering to keep your server clean</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Whitelist System</h3>
+                    <p>Protect trusted members with whitelist functionality for enhanced security</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Ticket System</h3>
+                    <p>Professional ticket system for member support and inquiries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="statServers">-</h3>
+                        <p class="stat-label">Servers</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="statUsers">-</h3>
+                        <p class="stat-label">Users</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">150+</h3>
+                        <p class="stat-label">Commands</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="statUptime">99.9%</h3>
+                        <p class="stat-label">Uptime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section class="commands" id="commands">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Command Categories</h2>
+                <p class="section-subtitle">Explore all available commands organized by category</p>
+            </div>
+            
+            <div class="command-categories">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th"></i> All Commands
+                </button>
+                <button class="category-btn" data-category="antinuke">
+                    <i class="fas fa-shield-alt"></i> Antinuke
+                </button>
+                <button class="category-btn" data-category="moderation">
+                    <i class="fas fa-hammer"></i> Moderation
+                </button>
+                <button class="category-btn" data-category="automod">
+                    <i class="fas fa-robot"></i> Auto Moderation
+                </button>
+                <button class="category-btn" data-category="information">
+                    <i class="fas fa-info-circle"></i> Information
+                </button>
+                <button class="category-btn" data-category="logs">
+                    <i class="fas fa-clipboard-list"></i> Logs
+                </button>
+                <button class="category-btn" data-category="voice">
+                    <i class="fas fa-microphone"></i> Voice
+                </button>
+                <button class="category-btn" data-category="welcomer">
+                    <i class="fas fa-door-open"></i> Welcomer
+                </button>
+            </div>
+
+            <div class="commands-list" id="commandsList">
+                <!-- Commands will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Soward</h2>
+                <p class="section-subtitle">Meet the bot and its creator</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card bot-info-card">
+                    <div class="about-avatar" id="botAvatarAbout">
+                        <img src="./assets/soward.png" alt="Soward Bot">
+                    </div>
+                    <h3 id="botNameAbout">Soward</h3>
+                    <p class="about-role">Discord Bot</p>
+                    <p class="about-description">
+                        Soward is a powerful, feature-rich Discord bot designed to provide comprehensive 
+                        server management, security, and moderation tools. Built with reliability and 
+                        performance in mind.
+                    </p>
+                </div>
+                <div class="about-card owner-info-card">
+                    <div class="about-avatar" id="ownerAvatar">
+                        <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Bot Owner">
+                    </div>
+                    <h3 id="ownerName">Loading...</h3>
+                    <p class="about-role">Bot Owner</p>
+                    <p class="about-description">
+                        The creator and maintainer of Soward, dedicated to providing the best 
+                        Discord bot experience for server administrators.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./assets/soward.png" alt="Soward">
+                        <span>Soward</span>
+                    </div>
+                    <p class="footer-description">
+                        Advanced Discord Bot for Server Management & Security
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#commands">Commands</a></li>
+                        <li><a href="#stats">Statistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" id="supportLink">Support Server</a></li>
+                        <li><a href="#" id="inviteLink">Invite Bot</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bot Status</h4>
+                    <div class="bot-status">
+                        <div class="status-item">
+                            <span class="status-dot online"></span>
+                            <span>Online</span>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-signal"></i>
+                            <span id="footerPing">-ms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Soward Bot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/commands.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
