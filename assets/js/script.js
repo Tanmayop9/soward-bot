@@ -261,9 +261,8 @@ function updateOwnerInfo(ownerData) {
 
 // Initialize invite links
 function initInviteLinks() {
-    // Default Discord bot invite URL
-    // Note: Replace CLIENT_ID with actual bot client ID
-    const defaultInviteUrl = 'https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&permissions=8&scope=bot%20applications.commands';
+    // Discord bot invite URL
+    const defaultInviteUrl = 'https://discord.com/api/oauth2/authorize?client_id=1433816132061761646&permissions=8&scope=bot';
     
     // You can also use a custom invite link if available
     const inviteUrl = CONFIG.inviteUrl || defaultInviteUrl;
