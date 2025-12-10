@@ -4,7 +4,7 @@ const CONFIG = {
     botId: null, // Bot application ID
     ownerId: '1201457314805330040',
     inviteUrl: null, // Will be generated dynamically
-    supportServer: null, // Can be added later
+    supportServer: 'https://discord.gg/XtTjSB5Zqb',
     // Static bot information
     botInfo: {
         username: 'SOWARD',
@@ -234,11 +234,11 @@ async function fetchOwnerInfo() {
             throw new Error('Could not fetch owner info');
         }
     } catch (error) {
-        console.log('Note: Owner info could not be fetched from Discord API (CORS restriction)', error);
-        // Fallback to generic data
+        console.log('Note: Developer info could not be fetched from Discord API (CORS restriction)', error);
+        // Fallback to static developer name
         updateOwnerInfo({
-            username: 'Bot Owner',
-            discriminator: '0000',
+            username: 'devterminator',
+            discriminator: '',
             avatar: `https://cdn.discordapp.com/embed/avatars/0.png`
         });
     }
@@ -281,6 +281,7 @@ function initInviteLinks() {
     // Set support server link if available
     if (elements.supportLink && CONFIG.supportServer) {
         elements.supportLink.href = CONFIG.supportServer;
+        elements.supportLink.target = '_blank';
     } else if (elements.supportLink) {
         elements.supportLink.href = '#';
         elements.supportLink.addEventListener('click', (e) => {
