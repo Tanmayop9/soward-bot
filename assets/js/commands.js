@@ -126,7 +126,7 @@ const commandsData = {
     jointocreate: [
         { name: 'jointocreate', description: 'Setup join-to-create voice channels', icon: 'fa-plus-square' }
     ],
-    coustomrole: [
+    customrole: [
         { name: 'setup', description: 'Setup custom role system', icon: 'fa-cog' }
     ],
     premium: [
@@ -163,7 +163,7 @@ const categoryInfo = {
     welcomer: { icon: 'fa-door-open', displayName: 'Welcomer', color: '#3498DB' },
     ticket: { icon: 'fa-ticket-alt', displayName: 'Ticket', color: '#E91E63' },
     jointocreate: { icon: 'fa-plus-square', displayName: 'Join to Create', color: '#00BCD4' },
-    coustomrole: { icon: 'fa-cog', displayName: 'Custom Role', color: '#FF9800' },
+    customrole: { icon: 'fa-cog', displayName: 'Custom Role', color: '#FF9800' },
     premium: { icon: 'fa-crown', displayName: 'Premium', color: '#FFD700' },
     dev: { icon: 'fa-code', displayName: 'Developer', color: '#607D8B' }
 };
