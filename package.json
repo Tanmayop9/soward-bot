@@ -1,0 +1,25 @@
+{
+  "name": "soward-bot-website",
+  "version": "1.0.0",
+  "description": "Official website for Soward Discord Bot",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "soward",
+    "website"
+  ],
+  "author": "devterminator",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
